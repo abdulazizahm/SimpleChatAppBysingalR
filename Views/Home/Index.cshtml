@@ -1,0 +1,27 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <span class="alert-light">User Name :</span><br>
+            <input type="text" id="txtUser" name="username" /> <br>
+            <span class="alert-light">Your Message :</span><br>
+            <textarea rows="12" cols="50" id="txtMessage"></textarea><br>
+            <button type="submit" id="btnSend" class="btn btn-info">Send Message</button>
+        </div>
+        <div class="col-md-6">
+            <h3>Messages list :</h3>
+            <ul id="list" class="alert alert-info">
+            </ul>
+        </div>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.js"></script>
+<script src="~/lib/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/site.js"></script>
+@section Scripts
+{
+
+}
